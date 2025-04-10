@@ -1,0 +1,49 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.board {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(10, 40px);
+  gap: 4px;
+}
+
+.row {
+  display: contents;
+}
+
+.cell {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+
+.cell.v {
+  background-color: red;
+} 
+
+.cell.h {
+  background-color: blue;
+}
+
+button {
+  margin-top: 20px;
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+p {
+  font-weight: 500;
+}
+
+#turn {
+  margin-top: 0;
+}
+
