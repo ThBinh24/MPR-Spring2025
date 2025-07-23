@@ -89,7 +89,10 @@ const Index = () => {
                 <Text style={styles.price}>{item.price}</Text>
                 <Text style={styles.description}>{item.description}</Text>
               </View>
-              <Pressable onPress={(() => deleteProduct(item.id))} style={styles.deleteButton}>
+              <Pressable
+                onPress={() => deleteProduct(item.id)}
+                style={styles.deleteButton}
+              >
                 <Text style={styles.deleteIcon}>✖</Text>
               </Pressable>
             </View>

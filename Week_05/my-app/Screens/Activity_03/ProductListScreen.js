@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import {
-  KeyboardAvoidingView,
   View,
   StyleSheet,
   Text,
@@ -35,8 +34,8 @@ export default function ProductListScreen({ navigation }) {
   };
 
   return (
-    <View style={{ flex: 1, backgroundColor: "#fff" }}>
-      <View style={styles.container}>
+    <View style={styles.container}>
+      <View style={styles.listContainer}>
         <Text style={styles.title}>Product List</Text>
 
         <FlatList
@@ -63,7 +62,7 @@ export default function ProductListScreen({ navigation }) {
           navigation.navigate("Product Add", { onAddProduct: addNewProduct })
         }
       >
-        <Text style={{ color: "white", fontSize: 18 }}>Add new roduct</Text>
+        <Text style={styles.buttonText}>Add new roduct</Text>
       </Pressable>
     </View>
   );
@@ -71,6 +70,11 @@ export default function ProductListScreen({ navigation }) {
 
 const styles = StyleSheet.create({
   container: {
+    flex: 1,
+    backgroundColor: "#fff",
+  },
+
+  listContainer: {
     flex: 1,
     padding: 25,
   },
@@ -106,6 +110,11 @@ const styles = StyleSheet.create({
     alignItems: "center",
     marginVertical: 20,
     marginHorizontal: 25,
+  },
+
+  buttonText: {
+    color: "#fff",
+    fontSize: 18,
   },
 });
 

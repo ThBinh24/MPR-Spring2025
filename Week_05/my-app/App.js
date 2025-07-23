@@ -12,24 +12,24 @@ const Stack = createNativeStackNavigator();
 
 export default function App() {  // Remove comment to see other activity
   return (
-    //                      <<activity 1>>
-    // <NavigationContainer>
-    //   <Stack.Navigator initialRouteName='Home'>
-    //     <Stack.Screen name='Home' component={HomeScreen}/>
-    //     <Stack.Screen name='Details' component={DetailScreen}/>
-    //   </Stack.Navigator>
-    // </NavigationContainer>
+//     //                      <<activity 1>>
+//     // <NavigationContainer>
+//     //   <Stack.Navigator initialRouteName='Home'>
+//     //     <Stack.Screen name='Home' component={HomeScreen}/>
+//     //     <Stack.Screen name='Details' component={DetailScreen}/>
+//     //   </Stack.Navigator>
+//     // </NavigationContainer>
 
-    //                      <<activity 2>>
-    // <NavigationContainer>
-    //   <Stack.Navigator initialRouteName="Product List">
-    //     <Stack.Screen name="Product List" component={ProductList} />
-    //     <Stack.Screen name="Product Detail" component={ProductDetail} />
-    //   </Stack.Navigator>
-    // </NavigationContainer>
-    //
+//     //                      <<activity 2>>
+//     // <NavigationContainer>
+//     //   <Stack.Navigator initialRouteName="Product List">
+//     //     <Stack.Screen name="Product List" component={ProductList} />
+//     //     <Stack.Screen name="Product Detail" component={ProductDetail} />
+//     //   </Stack.Navigator>
+//     // </NavigationContainer>
+//     //
 
-    //                      <<activity 3>>
+//     //                      <<activity 3>>
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Product List">
         <Stack.Screen name="Product List" component={ProductListScreen} />

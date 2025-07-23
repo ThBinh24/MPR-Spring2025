@@ -142,7 +142,7 @@ export default function App() {
     }
   };
 
-  return (
+  return ( 
     <View style={styles.container}>
       <Video
         ref={video}
@@ -197,3 +197,4 @@ const styles = StyleSheet.create({
     fontSize: 16,
   },
 });
+

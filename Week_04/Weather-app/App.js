@@ -22,7 +22,7 @@ const getInterpretWeather = (code) => {
   if (db["" + code]) {
     return db["" + code][0];
   } else {
-    return "Unknown: " + code;
+    return "Unknown";
   }
 };
 
